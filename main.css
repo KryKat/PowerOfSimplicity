@@ -34,8 +34,9 @@
     line-height: 21px;
     color: #24282e;
     cursor: pointer;
-    border: 0;
+    border: 1px solid transparent;
     outline: 0;
+    white-space: nowrap;
     display: inline-block;
   }
   .nav a {
@@ -44,6 +45,10 @@
     font-size: 14px;
     line-height: 21px;
     color: #a0a3a7;
+    transition: .2s all ease-in-out;
+  }
+  .nav a:hover {
+    color: #fff;
   }
   ul {
     gap: 64px;
@@ -51,6 +56,11 @@
   .logo,
   .btn {
     flex-basis: 175px;
+  }
+  .btn:hover {
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
   }
   main {
     padding-top: 179px;
@@ -92,7 +102,11 @@
     min-width: 239px;
     border-radius: 32px;
     color: #fc40f4;
+    transition: .2s all ease-in-out;
   }
+.link:hover {
+  transform: translateY(-5px);
+}
   .progress {
     margin-top: 64px;
     display: flex;

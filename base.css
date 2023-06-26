@@ -28,5 +28,6 @@
     height: auto;
   }
   .burger-icon {
+    cursor: pointer;
     display: none;
   }
